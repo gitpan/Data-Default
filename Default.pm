@@ -1,10 +1,11 @@
 package Data::Default;
 use strict;
+use base 'Exporter';
 use vars qw[@ISA @EXPORT_OK %EXPORT_TAGS];
 
 # version
 use vars '$VERSION';
-$VERSION = '0.10';
+$VERSION = '0.11';
 
 =head1 NAME
 
@@ -97,6 +98,10 @@ F<miko@idocs.com>
 =item Version 0.10    November 7, 2010
 
 Initial release
+
+=item Version 0.11    November 8, 2010
+
+Fixed bug: Exporter was not being loaded.
 
 =back
 
